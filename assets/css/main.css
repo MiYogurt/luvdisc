@@ -1,0 +1,47 @@
+/*
+
+CSS书写顺序
+
+1.位置属性(position, top, right, z-index, display, float等)
+
+2.大小(width, height, padding, margin)
+
+3.文字系列(font, line-height, letter-spacing, color- text-align等)
+
+4.背景(background, border等)
+
+5.其他(animation, transition等)
+
+*/
+
+
+.wrapper{
+  width: 800px;
+  height: 600px;
+  padding-top: 10px;
+  margin: 0 auto;
+}
+
+.canvas-container{
+  position: relative;
+
+  width: 800px;
+  height: 600px;
+  margin: 0;
+}
+
+canvas.canvas-item{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+canvas#one{
+  z-index: 1;
+}
+
+canvas#two{
+  z-index: 0;
+}
